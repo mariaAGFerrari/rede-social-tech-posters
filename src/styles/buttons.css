@@ -1,0 +1,43 @@
+#login-button,
+#register-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background: var(--blue-1);
+  border: 2px solid var(--blue-1);
+  border-radius: 4px;
+  color: var(--whiteFixed);
+  font-size: var(--font-size-5);
+}
+
+#login-button:hover, #register-button:hover {
+  background-color: var(--blue-2);
+  border: 2px solid var(--blue-2);
+}
+
+#back-to-register-button, #back-to-login-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  border: 1px solid var(--grey-1);
+  border-radius: 2px;
+  color: var(--grey-1);
+  font-weight: var(--font-weight-2);
+  background-color: var(--whiteFixed);
+}
+
+#back-to-register-button:hover, #back-to-login-button:hover {
+  border: 1px solid var(--blue-1);
+  background-color: var(--ice-color);
+  color: var(--blue-1);
+}
+
+#back-to-register-button:active, #back-to-login-button:active {
+  background-color: var(--blue-1);
+  border: 1px solid var(--blue-1);
+  color: var(--whiteFixed);
+}

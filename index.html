@@ -4,47 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+    <link rel="stylesheet" href="./src/styles/homePage.css">
     <title>🤓 TechPosters</title>
 </head>
 <body>
     <header>
         <figure>
-            <img src="./src/assets/TechPosters.png">
+            <img alt="logo" src="./src/assets/TechPosters.png">
         </figure>
-        <div>
-            <button>Login</button>
-            <button>Register</button>
+        <div id="header-buttons-container">
+            <button class="header-buttons">Login</button>
+            <button class="header-buttons">Register</button>
         </div>
-        <main>
-            <section id="login-section">
+        <figure>
+            <img alt="menu-icon" src="./src/assets/menu-icon.png">
+        </figure>
+    </header>
+    <main>
+        <section id="login-section">
+            <div>
                 <h2>Login</h2>
                 <form>
                     <input placeholder="E-mail" class="email">
                     <input placeholder="Password" class="password">
-                    <button type="submit">login</button> 
+                    <button type="submit" id="login-button">Login</button> 
                 </form>
-                <div>
+                <div class="redirect-div">
                     <span>Not registered yet?</span>
-                    <button>Register Now</button>
+                    <button type="button" id="back-to-register-button">Register Now</button>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="register-section">
-                <h2>Login</h2>
+        <section id="register-section">
+            <div>
+                <h2>Register</h2>
                 <form>
                     <input placeholder="Name" class="name">
                     <input placeholder="E-mail" class="email">
                     <input placeholder="Password" class="password">
                     <input placeholder="What's your job?" class="job">
                     <input placeholder="Profile picture url" class="img-profile">
-                    <button type="submit">register</button> 
+                    <button type="submit" id="register-button">Register</button> 
                 </form>
-                <div>
+                <div class="redirect-div">
                     <span>Do have an account?</span>
-                    <button>Back to Login</button>
+                    <button type="button" id="back-to-login-button">Back to Login</button>
                 </div>
-            </section>
-        </main>
-    </header>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
